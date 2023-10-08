@@ -4,7 +4,6 @@ import { useFocusEffect } from '@react-navigation/native';
 import MapView , { Marker } from 'react-native-maps';
 import { useSelector } from 'react-redux';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import BottomSheet from 'react-native-gesture-bottom-sheet';
 //import { useRoute } from '@react-navigation/native';
 const HomeScreen = ({navigation}) => { 
   // const PickedItem = useSelector((state) => state.item.selectedItem);

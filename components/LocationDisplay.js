@@ -495,10 +495,12 @@ function LocationDisplay({lat,lng,address}) {
     }
     console.log('focus',isFocused);
     if (isFocused && !lat && !lng) {
-        setPickedLocation({
-            lat: 17.504742,
-            lng: 78.286068
-        });
+    //   getLocationHandler();
+    setPickedLocation({
+        lat: 17.504742,
+        lng: 78.286068
+    });
+    setIsLoading(false);
     }
     else{
         setPickedLocation({
@@ -583,7 +585,7 @@ function LocationDisplay({lat,lng,address}) {
     {isLoading ? ( // Display loading UI when isLoading is true
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color="green" />
-          <Text>Loading...</Text>
+          <Text>Loading Map...</Text>
         </View>
       ) : (
         <ImageBackground

@@ -484,23 +484,27 @@ function LocationDisplay({lat,lng,address}) {
         return;
       }
 
-      const location = await getCurrentPositionAsync();
-      setPickedLocation({
-        lat: location.coords.latitude,
-        lng: location.coords.longitude,
-      });
+    //   const location = await getCurrentPositionAsync();
+    //   setPickedLocation({
+    //     lat: location.coords.latitude,
+    //     lng: location.coords.longitude,
+    //   });
+    setPickedLocation({
+        lat: 17.504742,
+        lng: 78.286068
+    });
       setIsLoading(false);
 
     console.log('load',isLoading);
     }
     console.log('focus',isFocused);
     if (isFocused && !lat && !lng) {
-    //   getLocationHandler();
-    setPickedLocation({
-        lat: 17.504742,
-        lng: 78.286068
-    });
-    setIsLoading(false);
+      getLocationHandler();
+    // setPickedLocation({
+    //     lat: 17.504742,
+    //     lng: 78.286068
+    // });
+    // setIsLoading(false);
     }
     else{
         setPickedLocation({

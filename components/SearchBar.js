@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { View, TextInput, Pressable, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
+import { View, TextInput, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
-import { HeaderButton } from 'react-navigation-header-buttons';
+// import { HeaderButton } from 'react-navigation-header-buttons';
 import { useNavigation } from '@react-navigation/native';
 
 const SearchBarr = ({ onSearch }) => {

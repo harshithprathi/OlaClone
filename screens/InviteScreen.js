@@ -1,9 +1,9 @@
-import { Pressable, View, Text, StyleSheet, Platform, ImageBackground, ScrollView,TouchableOpacity } from 'react-native';
-import SearchBarr from '../components/SearchBar';
-import ImageDisplay from '../components/ImageDisplay';
-import DestinationSearch from '../components/destination';
-import InviteCard from '../components/InviteCard';
-import Ads from '../components/ads';
+import { Text, StyleSheet, ScrollView,TouchableOpacity } from 'react-native';
+// import SearchBarr from '../components/SearchBar';
+// import ImageDisplay from '../components/ImageDisplay';
+// import DestinationSearch from '../components/destination';
+// import InviteCard from '../components/InviteCard';
+// import Ads from '../components/ads';
 import InviteScreenTopBar from '../components/InviteScreenTopBar';
 import YourInvites from '../components/YourInvites';
 import ShareCodeButton from '../components/ShareCodeButton';

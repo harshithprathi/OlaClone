@@ -2,19 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, Pressable } from 'react-native';
 import { Ionicons, FontAwesome } from '@expo/vector-icons';
 import Modal from 'react-native-modal';
-import {
-    useNavigation,
-    useRoute,
-    useIsFocused
-  } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import { RadioButton } from 'react-native-paper';
 import Map from '../components/Map';
-import {
-    getCurrentPositionAsync,
-    useForegroundPermissions,
-    PermissionStatus,
-  } from 'expo-location';
-import { getAddress, getMapPreview } from '../util/location';
+import { getAddress,  } from '../util/location';
 
 function DestinationScreen({route}) {
     const address=route?.params?.addr || '';
@@ -47,12 +38,16 @@ function DestinationScreen({route}) {
   useEffect(() => {
     async function getLocationHandler() {
 
-      const location = await getCurrentPositionAsync();
-      setPickedLocation({
-        lat: location.coords.latitude,
-        lng: location.coords.longitude,
-      });
-      setIsLoading(false);
+      //   const location = await getCurrentPositionAsync();
+    //   setPickedLocation({
+    //     lat: location.coords.latitude,
+    //     lng: location.coords.longitude,
+    //   });
+    setPickedLocation({
+        lat: 17.504742,
+        lng: 78.286068
+    });
+    //   setIsLoading(false);
 
     }
     if (!searchText) {

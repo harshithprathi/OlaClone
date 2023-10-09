@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import { View, FlatList, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
 const ScrollToTopButton = () => {
   const flatListRef = useRef(null);
 
-  const data = Array.from({ length: 50 }, (_, index) => ({ key: index.toString() }));
+//   const data = Array.from({ length: 50 }, (_, index) => ({ key: index.toString() }));
 
   const handleScrollToTop = () => {
     if (flatListRef.current) {

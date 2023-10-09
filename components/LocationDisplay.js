@@ -436,7 +436,7 @@ import { useEffect, useState } from 'react';
 import {
   View,
   StyleSheet,
-  Image,
+//   Image,
   Text,
   ImageBackground,
   TouchableOpacity,
@@ -444,7 +444,7 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import {
-  getCurrentPositionAsync,
+//   getCurrentPositionAsync,
   useForegroundPermissions,
   PermissionStatus,
 } from 'expo-location';
@@ -455,7 +455,7 @@ import {
 } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
-import { HeaderButton } from 'react-navigation-header-buttons';
+// import { HeaderButton } from 'react-navigation-header-buttons';
 
 import { getAddress, getMapPreview } from '../util/location';
 
@@ -467,7 +467,7 @@ function LocationDisplay({lat,lng,address}) {
   const isFocused = useIsFocused();
 
   const navigation = useNavigation();
-  const route = useRoute();
+//   const route = useRoute();
 
   const [locationPermissionInformation, requestPermission] =
     useForegroundPermissions();

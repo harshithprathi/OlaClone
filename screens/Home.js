@@ -1,11 +1,11 @@
-import { Pressable, View, Text, StyleSheet, Platform, ImageBackground, ScrollView } from 'react-native';
-import SearchBarr from '../components/SearchBar';
-import ImageDisplay from '../components/ImageDisplay';
+import { StyleSheet, ScrollView } from 'react-native';
+// import SearchBarr from '../components/SearchBar';
+// import ImageDisplay from '../components/ImageDisplay';
 import DestinationSearch from '../components/destination';
 import InviteCard from '../components/InviteCard';
 import Ads from '../components/ads';
 import LocationDisplay from '../components/LocationDisplay';
-import ScrollToTopButton from '../components/scrolltotop';
+// import ScrollToTopButton from '../components/scrolltotop';
 
 function Home({route}){
     console.log('locccc', route?.params?.address||'noaddress');

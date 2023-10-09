@@ -1,13 +1,6 @@
-import { Pressable, View, Text, StyleSheet, Platform, ImageBackground, ScrollView } from 'react-native';
-import SearchBarr from '../components/SearchBar';
-import ImageDisplay from '../components/ImageDisplay';
-import DestinationSearch from '../components/destination';
-import InviteCard from '../components/InviteCard';
-import Ads from '../components/ads';
-import LocationDisplay from '../components/LocationDisplay';
-import ScrollToTopButton from '../components/scrolltotop';
+import { Text, StyleSheet, ScrollView } from 'react-native';
 
-function Profile({route}){
+function Profile(){
     return (
         <ScrollView style={styles.container}>
             <Text style={{fontSize:20}}>Page Under Construction!</Text>

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, Image, TextInput, FlatList, Pressable, StyleSheet, Platform, KeyboardAvoidingView, Button } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import { ScrollView } from 'react-native-gesture-handler';
+import { View, Image, Pressable, StyleSheet, } from 'react-native';
+// import Icon from 'react-native-vector-icons/FontAwesome';
+// import { ScrollView } from 'react-native-gesture-handler';
 import {
   useNavigation,
-  useRoute,
-  useIsFocused,
+//   useRoute,
+//   useIsFocused,
 } from '@react-navigation/native';
 
 const Ads = () => {
